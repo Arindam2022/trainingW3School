@@ -1,0 +1,20 @@
+body{
+    background-color:lightblue;
+    }
+    h1{
+        border: 2px dotted red;
+        color: navy;
+        font-size: 300%;
+        font-family: cursive;
+        text-align: center;
+        }
+    p{
+        border: 5px dashed green;
+        color: rgb(216, 43, 95);
+        text-decoration: underline;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 100px;
+        font-size: larger;
+    }
