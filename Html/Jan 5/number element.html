@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="D:\Web Development\Images\fav.png">
+    <title>Number Element</title>
+    <meta charset="UTF-8">
+    <style>
+        form{
+            
+            padding: 10px 20px;
+            margin: 20px;
+            width: 30%;
+        }
+        #mar{
+            margin-top: 10px;
+        }
+        h1{
+            text-decoration: underline;
+        }
+        body{
+            background-color: pink;
+        }
+        input{
+            background-color: ghostwhite;
+            margin: 5px 0px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 style="text-align: center;">Number, Phone Number and Input restrictions</h1>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php ">
+        <fieldset>
+            <legend>Name, Age, Phone</legend>
+        <h1>Number element</h1>
+        <label for="name">Name :</label><br>
+        <input type="text" id="name" name="name" required autofocus><br>
+        <label for="age">Age :</label><br>
+        <input type="number" id="age" name="age" min="10" max="90" step="2"><br>
+        <label for="tel">Phone Number:</label><br>
+        <input type="tel" id="tel" name="tel" maxlength="10"><br>
+        <input type="submit" value="SUBMIT">
+        </fieldset>     
+    </form>
+    <form action="https://www.w3schools.com/action_page.php ">
+
+        <h3>Radio - type</h3>
+        <input type="radio" id="one" name="man" checked >
+        <label for="one">MAN</label><br>
+        <input type="radio" id="two" name="woman" >
+        <label for="two">WOMAN</label><br>
+        <input type="radio" id="three" name="other">
+        <label for="three">OTHER</label>
+    </form>
+     
+
+
+</body>
+
+
+</html>
