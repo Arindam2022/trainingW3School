@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="D:\Web Development\Images\fav.png">
+    <title>Method Attribute</title>
+    <meta charset="UTF-8">
+    <style>
+        form{
+            border: 2px solid black;
+            padding: 10px 20px;
+            margin: 20px;
+            width: 25%;
+        }
+        #mar{
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>Method Attribute</h3>
+    <hr>
+    <p>The method attribute specifies the HTTP method to be used when submitting the form data. defautl method is get.</p>
+    <form action="https://www.w3schools.com/action_page.php " target="_self" method="get">
+        <label for="Name">Form data will be sent as URL variables (2048 characters)</label><br>
+        <input type="text" name="text" id="name">
+        <input id="mar" type="submit" value="Get Method">
+
+    </form>
+    <form action="https://www.w3schools.com/action_page.php " target="_self" method="post">
+        <label for="Name">Form data will be sent as HTTP post transaction(unlimited)</label><br>
+        <input type="text" name="text" id="name">
+        <input id="mar" type="submit" value="Post Method">
+
+    </form>
+    
+</body>
+
+</html>

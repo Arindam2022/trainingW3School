@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="D:\Web Development\Images\fav.png">
+    <title>HTML Forms</title>
+    <style>
+        form{
+            border: 2px solid black;
+            width: 200px;
+            padding: 10px 20px 20px 10px;
+            background-color: deeppink;
+        }
+        h3{
+            text-decoration: underline;
+        }
+        body{
+            background-color: chartreuse;
+        }
+        .center{
+            text-align: center ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="center">HTML Forms</h1>
+    <p class="center"> The form element is a container for different types of input elements, such as: text fields, checkboxes, radio
+        buttons, submit buttons, etc.</p>
+    <hr>
+    <h3>Text Feilds in form</h3>
+    <form>
+        <label for="one">NAME :</label><br>
+        <input type="text" id="one" name="one"><br>
+        <label for="two">ADDRESS :</label><br>
+        <input type="text" id="two" name="two"><br>
+    </form>
+    <hr>
+    <h3>Radiobutton in Forms</h3>
+
+    
+    <form>
+        <label>What is your Gender??</label><br>
+        <input type="radio" id="m" value="Male"name="three">
+        <label for="m">MALE</label><br>
+        <input type="radio" id="f" value="Female"name="four">
+        <label for="f">FEMALE</label><br>
+        <input type="radio" id="t" value="Other"name="five">
+        <label for="t">OTHER</label>
+    </form>
+    <hr>
+    <h3>Checkboxes</h3>
+    <form>
+        <label>What do you like to drink??</label><br>
+        <input type="checkbox" id="tea" value="tea"name="six">
+        <label for="tea">TEA</label><br>
+        <input type="checkbox" id="coffee" value="coffee"name="seven">
+        <label for="coffee">COFFEE</label><br>
+        <input type="checkbox" id="whiskey" value="whiskey"name="eight">
+        <label for="whiskey">WHISKEY</label>
+
+    </form>
+</body>
+
+</html>
