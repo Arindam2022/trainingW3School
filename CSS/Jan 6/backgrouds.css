@@ -1,0 +1,25 @@
+body{
+    background-color: rgba(135, 206, 235, 0.4);
+    background-image: url(../../Images/backimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+* {
+    text-align: center;
+}
+#bg{
+    background-image: url(../../Images/car.png);
+    background-size: 10%;
+    background-repeat: repeat-y;
+    background-position:left;
+    
+    
+    
+    
+}
+h1, h2, p{
+    color: tomato;
+    margin-left: 150px;
+    margin-right: 150px;
+}

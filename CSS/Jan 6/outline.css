@@ -1,0 +1,64 @@
+.center{
+    text-align: center;
+    text-transform: capitalize;
+}
+#a1{
+    border: 2px solid black;
+    outline: 3px dotted green;
+
+}
+#a2{
+    border: 3px dotted black;
+    outline: 5px ridge orange;
+
+}
+#a3{
+    border: 3px dashed hotpink;
+    outline: 5px groove yellow;
+
+}
+#a4{
+    border: 3px double darkviolet;
+    outline: 5px inset navy;
+
+}
+#a5{
+    border: 3px groove black;
+    outline: 5px outset khaki;
+
+}
+#a6{
+    border: 3px ridge black;
+    border-radius: 100px;
+    outline: 5px double olive;
+    outline-offset: 10px;
+
+}
+#a7{
+    border: thick  blue;
+    border-style: inset dashed double solid;
+    outline:thick solid white;
+
+}
+#a8{
+    border: medium black;
+    border-style: double ridge;
+
+}
+#a9{
+    border: solid rgb(172, 30, 30);
+    border-width: 2px 5px 10px 15px;
+    
+
+}
+
+body{
+    background-color: lightseagreen;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+p.center{
+    font-size: 25px;
+    color: linen;
+    margin: 40px;
+}

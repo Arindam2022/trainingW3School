@@ -1,0 +1,73 @@
+.center{
+    text-align: center;
+}
+*{
+    text-transform: capitalize;
+}
+body{
+    background-color: mediumturquoise;
+}
+#a1{
+    color: olive;
+    background-color: palevioletred;
+    
+}
+#a2{
+    color: midnightblue;
+    background-color: mintcream;
+    
+}
+.c{
+    margin: auto;
+    width: 400px;
+}
+#a3{
+    text-align: right;
+    background-color: peru;
+    color: white;
+    text-indent: 200px;
+}
+#a4{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    background-color: whitesmoke;
+    word-spacing: -5px;
+}
+#a5{
+    text-align: justify;
+    background-color: white;
+    line-height: 1.5;
+    
+}
+#a6{
+    text-align-last: center;
+    background-color: yellow;
+    letter-spacing: 2px;
+
+}
+#a7{
+    vertical-align: sub;
+    
+}
+#a8{
+    text-decoration: overline;
+    color: violet;
+    background-color: rgb(22, 190, 148);
+}
+#a9{
+    text-decoration: line-through;
+    color: tomato;
+    background-color: rebeccapurple;
+}
+#a10{
+    text-decoration: underline;
+    color: palegreen;
+    background-color: black;
+}
+h2 {
+    color: white;
+    text-shadow: 2px 2px 15px black;
+  }
+  .wide{
+      width: 50%;
+  }

@@ -1,0 +1,28 @@
+body{
+    background-color: cornflowerblue;
+}
+#white{
+    color: white;
+}
+.center{
+    text-align: center;
+}
+p.bold{
+    font-weight: bold;
+}
+* {
+    font-family:sans-serif
+}
+h2{
+    text-decoration: underline;
+}
+h1, h2{
+    color: yellow;
+}
+h1{
+    border: 2px solid yellow;
+}
+/*this is a commment*/
+
+
+

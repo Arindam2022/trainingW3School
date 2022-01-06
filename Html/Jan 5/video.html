@@ -6,12 +6,12 @@
     <title>HTML Video element </title>
     <meta charset="UTF-8">
     <style>
-      
         h1 {
             text-align: center;
             text-decoration: underline;
         }
-        video{
+
+        video {
             margin-left: 600px;
             border: 10px dashed greenyellow;
             padding: 0px;
@@ -21,11 +21,20 @@
 </head>
 
 <body>
-    
+
     <h1>HTML video</h1>
-    <video width="300" height="250"  controls autoplay muted>
+    <video width="300" height="250" controls autoplay muted>
         <source type="video/mp4" src="../../Images/cartoon.mp4">
-    </video>
+    </video><br>
+
+    <label for="one">Meter</label>
+    <meter id="one" value="0.3">30%</meter><br>
+    <label for="two">progress</label>
+    <progress value="50" max="100">50% </progress><br>
+    <details>
+        <summary>hello</summary>
+        <p>my name is Arindam </p>
+    </details>
 
 </body>
 

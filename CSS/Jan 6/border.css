@@ -1,0 +1,54 @@
+.center{
+    text-align: center;
+    text-transform: capitalize;
+}
+#a1{
+    border: 2px solid black;
+
+}
+#a2{
+    border: 3px dotted black;
+
+}
+#a3{
+    border: 3px dashed hotpink;
+
+}
+#a4{
+    border: 3px double darkviolet;
+
+}
+#a5{
+    border: 3px groove black;
+
+}
+#a6{
+    border: 3px ridge black;
+    border-radius: 100px;
+
+}
+#a7{
+    border: thick  blue;
+    border-style: inset dashed double solid;
+
+}
+#a8{
+    border: medium black;
+    border-style: double ridge;
+
+}
+#a9{
+    border: solid rgb(172, 30, 30);
+    border-width: 2px 5px 10px 15px;
+    
+
+}
+
+body{
+    background-image: url(../../Images/bg.jfif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+p.center{
+    font-size: 25px;
+}

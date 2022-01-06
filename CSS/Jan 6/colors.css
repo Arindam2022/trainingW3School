@@ -1,0 +1,14 @@
+p{
+    background-color: thistle;
+    border:3px solid #ffa500;
+    color: hsla(120, 98%, 51%, 0.3));
+}
+h1{
+    color: brown;
+    background-color: rgb(255, 99, 71);
+}
+h2{
+    border: 2px solid cyan;
+    background-color: rgba(30, 45, 175, 0.3);
+    color: hsl(248, 53%, 58%);
+}
