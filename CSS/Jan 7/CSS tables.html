@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../../Images/cssfav.jfif">
+    <title>CSS Tables</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black
+        }
+
+        table {
+            width: 900px;
+            border-collapse: collapse;
+            margin: auto;
+            caption-side: bottom;
+            
+
+        }
+
+        th {
+            height: 30px;
+            font-size: 30px;
+            background-color: darkolivegreen;
+            color: white;
+        }
+
+        td {
+            text-align: center;
+            vertical-align: bottom;
+            padding: 10px;
+            height: 30px;
+        }
+
+        tr:hover {
+            background-color: cadetblue;
+
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightgreen
+        }
+
+        caption {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        div{
+            overflow-x: auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML Lists</h1>
+    <div >
+
+    
+    <table>
+        <caption>Table</caption>
+        <tr>
+            <th>Name</th>
+            <th>Roll. no.</th>
+            <th>State</th>
+        </tr>
+        <tr>
+            <td>Arindam</td>
+            <td>1</td>
+            <td>HR</td>
+        </tr>
+        <tr>
+            <td>Keshav</td>
+            <td>2</td>
+            <td>J&K</td>
+        </tr>
+        <tr>
+            <td>Prajwal</td>
+            <td>3</td>
+            <td>KR</td>
+        </tr>
+        <tr>
+            <td>Vishal</td>
+            <td>4</td>
+            <td>TN</td>
+        </tr>
+
+
+    </table>
+</div>
+
+</body>
+
+</html>

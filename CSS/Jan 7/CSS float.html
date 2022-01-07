@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+    <style>
+        #a1 {
+            height: 50px;
+            width: 300px;
+            background-color: indianred;
+            border: 5px solid red;
+            float: left;
+
+
+        }
+
+        #a2 {
+            height: 50px;
+            width: 300px;
+            background-color: rosybrown;
+            border: 5px solid blue;
+            float: right;
+
+
+
+        }
+
+        #a3 {
+            height: 50px;
+            width: 300px;
+            background-color: indianred;
+            border: 5px solid red;
+            float: left;
+
+            margin-top: 10px;
+
+        }
+
+        #a4 {
+            height: 50px;
+            width: 300px;
+            background-color: rosybrown;
+            border: 5px solid rgb(1, 1, 39);
+            float: right;
+            margin-top: 10px;
+        }
+
+        .f {
+            clear: both;
+        }
+        #clearfix{
+            padding: 10px;
+            border: 2px solid black;
+            overflow: auto;
+            clear: both;
+            margin-top: 20px;
+            
+        }
+        img{
+            float: right;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="a1">
+        this div is floated  left.
+    </div>
+    <div id="a2">
+        this div is floated right.
+    </div>
+    <div class="f">
+
+        <div id="a3">
+            this div is floated left.
+        </div>
+        <div id="a4">
+            this div is floated right.
+        </div>
+    </div>
+    <div class="f"></div>
+    <div id="clearfix">
+        <img src="../../Images/car.png">
+        this is a paragraph with a photo.
+    </div>
+
+</body>
+
+</html>

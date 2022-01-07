@@ -1,0 +1,50 @@
+#b1{
+    position: static;
+    border: 2px solid blueviolet;
+    margin-top: 20px;
+    
+}
+#b2{
+    position: relative;
+    left: 100px;
+    top: 50px;
+    border: 2px solid palegreen;
+    width: 500px;
+}
+#b3{
+    position: fixed;
+    border: thin dashed purple;
+    width: 500px;
+    right: 10px;
+    bottom: 300px;
+
+}
+#b4{
+    position: relative;
+    top: 100px;
+    border: thick solid hotpink;
+    height: 300px;
+    width: 800px;
+    
+}
+#b5{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 300px;
+    width: 400px;
+    border: medium dotted purple;
+}
+#g{
+    text-decoration: underline;
+    background-color: salmon;
+    text-align: center;
+}
+#b6{
+    position: sticky;
+    top: 10px;
+    background-color: skyblue;
+    color: white;
+    border:5px solid coral;
+    text-align: center;
+}

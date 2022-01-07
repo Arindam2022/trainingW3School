@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS dropdown</title>
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="../../Images/cssfav.jfif">
+    <style>
+        .btn {
+            background-color: violet;
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+            border: none;
+        }
+
+        .drp {
+            position: relative;
+            display: inline-block;
+        }
+
+        .cnt {
+            display: none;
+            position: absolute;
+            background-color: violet;
+        }
+
+        .cnt a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .cnt a:hover {
+            color: black;
+            background-color: blueviolet;
+        }
+
+        .drp:hover .cnt {
+            display: block;
+        }
+
+        .btn:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="center ">CSS dropdown</h1>
+    <hr>
+    <div class="drp">
+        <button class="btn">dropdown</button>
+        <div class="cnt">
+            <a id="blk" href="#">Home</a>
+            <a id="blk" href="#">House</a>
+            <a id="blk" href="#">Residence</a>
+            <a id="blk" href="#">Flat</a>
+        </div>
+    </div>
+
+
+</html>

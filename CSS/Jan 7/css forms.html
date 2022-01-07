@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="../../Images/cssfav.jfif">
+    <meta charset="UTF-8">
+    <style>
+        form {
+            border: 2px solid black;
+            padding: 10px 20px;
+            margin: 20px;
+            width: 50%;
+        }
+        #mar {
+            margin-top: 10px;
+        }
+
+        #fwid {
+            width: 100%;
+        }
+
+        input[type=text].txt {
+            padding: 10px 0px;
+            box-sizing: border-box;
+        }
+
+        input[type=text].color {
+            background-color: aquamarine;
+        }
+
+        input[type=text].color:focus {
+            background-color: rgb(120, 248, 0);
+
+        }
+        input[type=text].icon {
+            width: 200px;
+
+            transition: width 0.9s ease-in-out;
+            
+        }
+
+        input[type=text].icon:focus {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="https://www.w3schools.com/action_page.php ">
+        <h2>Input elements</h2>
+        <p>The input element can be displayed in several ways, depending on the type attribute.</p>
+        <h3>Input Element</h3>
+        <label for="text"> Enter Text : </label>
+        <input id="fwid" type="text" name="text"><br>
+        <hr>
+        <label for="text"> Enter Text : </label>
+        <input class="txt" type="text" name="text"><br>
+        <label for="text"> Enter Text : </label>
+        <input class="txt" type="text" name="text"><br>
+        <label for="text"> Enter Text : </label>
+        <input class="color" type="text" name="text"><br>
+        <label for="text"> Enter Text : </label>
+       
+
+    </form>
+
+
+</body>
+
+</html>

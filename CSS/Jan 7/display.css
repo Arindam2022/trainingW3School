@@ -1,0 +1,23 @@
+body{background-color: burlywood;}
+h1{color: crimson;}
+p{color: azure;}
+p#a1{display: inline;
+    border:2px solid blueviolet;
+    color: cornsilk;
+    background-color: rgb(240, 208, 126);
+
+}
+h1#a2{
+    display: none;
+}
+h1#a3{
+    visibility: hidden;}
+a{
+    display: block;
+}
+a:link{
+    color: darkred;
+    text-decoration: none;
+    border: thin solid darkslategray;
+    text-align: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Align</title>
+    <style>
+        body {
+            background-color: lightcoral;
+        }
+
+        h1 {
+            border: 3px solid grey;
+            text-align: center;
+        }
+
+        .center {
+            width: 500px;
+            background-color: indigo;
+            color: lavender;
+            margin: auto;
+            border: 10px double rgb(255, 255, 255);
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        #imgcen {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            margin-top: 20px;
+        }
+
+        #right {
+            border: 5px solid green;
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 20px;
+            width: 400px;
+            position: absolute;
+            right: 0;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>CSS ALIGN</h1>
+    <hr>
+    <div class="center">
+        <p>this text is centered aligned within a div of a fixed width which is also centered</p>
+    </div>
+    <img id="imgcen" src="../../Images/wallp.jpg">
+    <div id="right">
+        <p>this text is aligned to the right using position.</p>
+    </div>
+</body>
+
+</html>
