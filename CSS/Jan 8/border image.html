@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border image</title>
+    <style>
+        h2 {
+            padding: 20px;
+            border: 10px solid transparent;
+            border-image: repeating-linear-gradient(60deg, #DE31ED, #31E2ED 50px) 20 stretch;
+        }
+        h3{
+            padding: 20px;
+            border: 10px solid transparent;
+            border-image: url(../../Images/bor.PNG) 70 stretch;
+
+        }
+        hr{
+           size: 0px;
+           border-bottom: 5px solid transparent;
+           border-image: url(../../Images/bor.PNG) 20 repeat;
+        }
+    </style>
+</head>
+<h1>Using Image as a border</h1>
+<hr>
+<h2>
+    A Gradient is used as the border
+</h2>
+<hr>
+<h3>
+    An image is used as the border
+</h3>
+
+<body>
+
+</body>
+
+</html>

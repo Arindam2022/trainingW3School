@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear-gradient</title>
+    <style>
+        #one {
+            height: 200px;
+            width: 300px;
+            background-image: radial-gradient(circle, red, blue, white);
+            margin-bottom: 10px;
+        }
+
+        #two {
+            height: 200px;
+            width: 300px;
+            background-image: radial-gradient(closest-side at 50% 55%, rgb(224, 90, 218), white, green);
+            margin-bottom: 10px;
+        }
+
+        #three {
+            height: 200px;
+            width: 300px;
+            background-image: repeating-radial-gradient(orange, white 10%, green 15%);
+            margin-bottom: 10px;
+        }
+
+        #grad {
+            height: 300px;
+            width: 300px;
+            background-image: conic-gradient(red, yellow, green, blue, black);
+            border-radius: 50%;
+        }
+
+        #grad1 {
+            height: 200px;
+            width: 200px;
+
+            background-image: repeating-conic-gradient(red 0deg 10deg, orange 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="grad"></div>
+    <div id="grad1"></div>
+
+</body>
+
+</html>

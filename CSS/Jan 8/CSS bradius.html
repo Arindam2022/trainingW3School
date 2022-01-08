@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Radius</title>
+    <style>
+        #rnd {
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            float: right;
+            
+            
+        }
+
+        #rnd1 {
+            background-color: rgb(39, 197, 100);
+            width: 200px;
+            height: 200px;
+            border-radius: 20px 50px 10px 35px;
+            
+        }
+
+        #crl {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: brown;
+            position: relative;
+            left: 700px;
+            bottom: 200px;
+        }
+        p{
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Rounded Corners</h1>
+    <hr>
+    <div id="rnd">
+        <p>this is a div with all corners rounded equally.</p>
+    </div>
+    <div id="rnd1">
+        <p>this is a div with all corners rounded unequally.</p>
+    </div>
+    <div id="crl">
+        <p>circle using rounded corners.</p>
+    </div>
+
+
+
+</body>
+
+</html>

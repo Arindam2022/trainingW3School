@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear-gradient</title>
+    <style>
+        #one {
+            height: 200px;
+            background-image: linear-gradient(to top left, red, blue);
+            margin-bottom: 10px;
+        }
+
+        #two {
+            height: 200px;
+            background-image: linear-gradient(90deg, rgb(224, 90, 218), white);
+            margin-bottom: 10px;
+        }
+        #three {
+            height: 200px;
+            background-image: linear-gradient(180deg, orange, white, green);
+            margin-bottom: 10px;
+        }
+        #four {
+            height: 200px;
+            background-image: repeating-linear-gradient(200deg, rgb(10, 178, 255), rgb(255, 9, 9) 10%, rgb(255, 0, 200) 7%);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+
+</body>
+
+</html>

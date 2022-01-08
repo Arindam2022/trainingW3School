@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Txeteffects</title>
+    <style>
+        p.clip {
+            white-space: nowrap;
+            width: 150px;
+            border: 2px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        p.ell {
+            white-space: nowrap;
+            width: 150px;
+            border: 2px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .clip:hover,
+        .ell:hover {
+            overflow: visible;
+
+        }
+
+        p.brr {
+            width: 11em;
+            border: 1px solid #000000;
+            word-wrap: break-word;
+            word-break: keep-all;
+        }p.vert {
+            writing-mode:vertical-rl;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <p class="clip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero</p>
+    <p class="ell">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero</p>
+    <p class="brr">Lorem ipsum dolor sitameconsectetuadipiscinelitInteger nec odio. Praesent libero</p>
+    <p class="vert">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+   
+
+
+</body>
+
+</html>

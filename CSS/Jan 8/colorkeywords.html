@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS color keywords</title>
+    <style>
+        #prnt{
+            color: red;
+            background-color: sandybrown;
+            padding: 20px;
+            border: 3px solid currentColor;
+        }
+        #c1{
+            background-color: seagreen;
+            margin-bottom: 10px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #c2{
+            background-color: transparent;
+            border: 2px solid black;
+        }
+        span{
+            border: inherit;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="prnt">
+        <p>the boder is of the current color</p>
+        <div id="c1">NO transparent <span>(this is a span tag which will inherit border)</span>bg</div>
+        <div id="c2"><p>Transparent bg</p></div>
+    </div>
+
+
+</body>
+
+</html>

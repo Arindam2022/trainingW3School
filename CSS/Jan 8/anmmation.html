@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #one {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(255, 94, 0);
+            animation: zigzag 4s ease-in-out 1s infinite alternate;
+            position: relative;
+            border-radius: 50%;
+            
+            
+        }
+        @keyframes zigzag {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:0px; top:200px;}
+        75%  {background-color:green; left:200px; top:200px;}
+        100% {background-color:red; left:0px; top:400px;}
+        }       
+      
+        *{text-align: center;
+        text-transform: capitalize;
+        }
+
+
+            
+            
+    </style>
+</head>
+
+<body>
+    <h1>Animaton</h1>
+    <hr>
+    <div id="one"><p style="display: inline-block; vertical-align: middle;">Imma snak</p></div>
+    
+
+</body>
+
+</html>

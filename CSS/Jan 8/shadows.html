@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+        *{
+            text-align: center;
+            font-size:40px ;
+        }
+        h1{
+            color: white;
+            text-shadow: 3px 3px 5px black ;
+        }
+        h2{
+            color: blueviolet;
+            text-shadow:3px 3px white, 5px 5px white ;
+        }
+        h3{
+            color: rgb(0, 255, 21);
+            text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        #one{
+            height: 200px;
+            width: 300px;
+            margin: auto;
+            background-color: pink;
+            box-shadow: 5px 5px 5px yellow;
+            margin-bottom: 10px;
+        }
+        #on{
+            height: 200px;
+            width: 300px;
+            margin: auto;
+            background-color: pink;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+    </style>
+</head>
+<body>
+    <h1>
+        SHADOW
+    </h1>
+    <h2>
+        SHADOW
+    </h2>
+    <h3>
+        SHADOW
+    </h3>
+    <div id="one"></div><div id="on"></div>
+    
+</body>
+</html>
