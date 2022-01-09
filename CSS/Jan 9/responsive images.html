@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive image</title>
+    <style>
+        .cont {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .cont {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .cont {
+                width: 100%;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        div.img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Responsive image</h1>
+    <hr>
+    <div class="cont">
+        <div class="img">
+            <img src="../../Images/bg.jfif" alt="">
+        </div>
+    </div>
+    <div class="cont">
+        <div class="img">
+            <img src="../../Images/bg.jfif" alt="">
+        </div>
+    </div>
+    <div class="cont">
+        <div class="img">
+            <img src="../../Images/bg.jfif" alt="">
+        </div>
+    </div>
+    <div class="cont">
+        <div class="img">
+            <img src="../../Images/bg.jfif" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

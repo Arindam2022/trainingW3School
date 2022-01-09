@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        .page{
+            
+            display: inline-block;
+        }
+        .page a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            margin: 0 4px;
+        }
+
+        .page a.active {
+            background-color: #1100ff;
+            color: white;
+            border: 1px solid #ffffff;
+        }
+
+        .page a:hover:not(.active) {
+            background-color: #ddd;
+        }
+        .cen{text-align: center;}
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Pagination</h1>
+    <hr>
+    <div class="cen">
+    <div class="page">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+</div>
+
+</body>
+
+</html>

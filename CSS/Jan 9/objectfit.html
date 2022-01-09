@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit</title>
+    <style>
+        img{
+            border:2px solid black;
+            width: 120px;
+            height: 300px;
+        }
+        .fill{
+            object-fit: fill;
+        }
+        .cont{
+            object-fit: contain;
+        }
+        .cover{
+            object-fit: cover;
+            object-position: 20% 100%;
+        }
+        .sdown{
+            object-fit: scale-down;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Object fit</h1>
+    <hr>
+    <img class="fill" src="../../Images/car.png" alt="Johnny">
+    <p>Fill</p>
+    <br>
+    <img class="cont" src="../../Images/car.png" alt="Johnny">
+    <p>contain</p>
+    <br>
+    <img class="cover" src="../../Images/car.png" alt="Johnny">
+    <p>Cover</p>
+    <br>
+    <img class="sdown" src="../../Images/car.png" alt="Johnny">
+    <p>scale-down</p>
+    <br>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        .btn {
+            font-size: 25px;
+            background-color: lime;
+            color: white;
+            
+            width: 250px;
+            border: 3px solid purple;
+            border-radius: 5px;
+           
+            display: inline-block;
+        }
+        span{
+            transition: all 0.5s;
+            position: relative;
+            display: inline-block;
+        }
+
+        .arow:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .btn:hover span{
+            padding-right: 20px;
+        }
+        .btn:hover .arow:after{
+            opacity: 1;
+        }
+        .btn:active{
+            transform: translateY(4px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>BUTTONS</h1>
+    <hr>
+    <button class="btn"><span class="arow">I am a button</span></button>
+
+</body>
+
+</html>

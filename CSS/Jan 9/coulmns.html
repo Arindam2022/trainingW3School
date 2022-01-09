@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns</title>
+    <style>
+        .col {
+            column-count: 3;
+            column-rule: 3px solid purple;
+            column-gap: 30px;
+            column-fill: balance;
+            margin: auto;
+            background-color: silver;
+            width: 50%;
+            padding: 10px;
+        }
+
+        h2 {
+            column-span: all;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Columns</h1>
+    <hr>
+    
+    <div class="col">
+        <h2>Coulmn fill not working and coulmn span works on 1 or all</h2>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </div>
+
+</body>
+
+</html>
