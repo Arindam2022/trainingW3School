@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+            justify-content: center;
+            height: 800px;
+            
+            align-content: center;
+            
+            padding: 5px;
+            background-color: tomato;
+        }
+
+        .item {
+            padding: 10px;
+            background-color: wheat;
+            text-align: center;
+            border: 2px solid darkorange;
+
+
+        }
+
+        .item1 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+        }
+
+        .item1item {
+            border: 1px solid black;
+        }
+
+        .item5 {
+            grid-column: 1/5;
+        }
+
+        .item13 {
+            grid-area: 4 / 4 / 6 / 5;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid </h1>
+    <hr>
+    <div class="grid">
+        <div class="item item1">
+            <div class="item1item">1</div>
+            <div class="item1item">2</div>
+            <div class="item1item">3</div>
+            <div class="item1item">4</div>
+            <div class="item1item">5</div>
+            <div class="item1item">6</div>
+            <div class="item1item">7</div>
+            <div class="item1item">8</div>
+            <div class="item1item">9</div>
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item item5">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item item13">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+    </div>
+
+</body>
+
+</html>

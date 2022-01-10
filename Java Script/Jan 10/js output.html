@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Output</title>
+    <link rel="icon" href="../../Images/jsfav.png">
+    <script>
+        function colorchng(){
+            document.getElementById('del').style.color='red';
+        }
+    </script>
+</head>
+
+<body>
+    <script src="external.js"></script>
+    <h1>JS Internal and external</h1>
+    <hr>
+    <p id="demo">This is a text.</p>
+    <button onclick="document.getElementById('demo').innerHTML='text is changed'">Click to change text.</button>
+    <button onclick="document.write('HAHA')">Click to Delete all html</button>
+    <button onclick="alert('HAHA')">Click to create alert</button>
+    <button onclick="console.log('HAHA')">Click to create console log</button>
+    <button onclick="window.print()">Click to Print this page</button>
+
+  
+</body>
+
+</html>

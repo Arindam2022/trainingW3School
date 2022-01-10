@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felx align</title>
+    <style>
+        .aligncen {
+            display: flex;
+            background-color: cadetblue;
+            align-items: center;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+
+        .aligncen > div {
+            background-color: chocolate;
+            margin: 10px;
+            padding: 20px;
+        }
+        .base {
+            display: flex;
+            background-color: cadetblue;
+            align-items: baseline;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+
+        .base > div {
+            background-color: chocolate;
+            margin: 10px;
+            padding: 20px;
+        }
+        .wrapalign {
+            display: flex;
+            background-color: cadetblue;
+            flex-wrap: wrap;
+            align-content: space-between;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+
+        .wrapalign > div {
+            background-color: chocolate;
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Flex align items </h1>
+    <hr>
+
+    <div class="aligncen">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class=" base">
+        <div><h1>1</h1></div>
+        <div><h2>2</h2></div>
+        <div><h3>3</h3></div>
+        <div><h5>4</h5></div>
+    </div>
+    <div class="wrapalign">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+    </div>
+</body>
+
+</html>

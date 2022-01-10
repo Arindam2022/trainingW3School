@@ -1,0 +1,76 @@
+*{
+    text-align: center;
+}
+.felxcol{
+    display: flex;
+    background-color: cadetblue;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.felxcol > div{
+    background-color: chocolate;
+    margin: 10px;
+    padding: 20px;
+}
+.felxrow{
+    display: flex;
+    background-color: rgb(50, 238, 112);
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+.felxrow > div{
+    background-color: rgb(1, 178, 223);
+    margin: 10px;
+    padding: 20px;
+}
+.felxwrap{
+    display: flex;
+    background-color: deepskyblue;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    
+}
+.felxwrap > div{
+    background-color: rgb(160, 12, 12);
+    margin: 10px;
+    padding: 20px;
+}
+.felxcen{
+    display: flex;
+    background-color: rgb(34, 30, 255);
+    justify-content:center;
+    margin-bottom: 10px;
+}
+.felxcen > div{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 20px;
+    width: 30px;
+    text-align: center;
+}
+.felxsaround{
+    display: flex;
+    background-color: rgb(34, 30, 255);
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.felxsaround > div{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 20px;
+    width: 30px;
+    text-align: center;
+}
+.felxbetween{
+    display: flex;
+    background-color: rgb(34, 30, 255);
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.felxbetween > div{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 20px;
+    width: 30px;
+    text-align: center;
+}

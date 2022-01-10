@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Internal and external</title>
+    <link rel="icon" href="../../Images/jsfav.png">
+    <script>
+        function colorchng(){
+            document.getElementById('del').style.color='red';
+        }
+    </script>
+</head>
+
+<body>
+    <script src="external.js"></script>
+    <h1>JS Internal and external</h1>
+    <hr>
+    <button onclick="colorchng()">Click to change color to red.</button>
+    <p id="del">This is a text.</p>
+    
+    <button onclick="texalign()">Click to CENTER Text</button>
+  
+</body>
+
+</html>

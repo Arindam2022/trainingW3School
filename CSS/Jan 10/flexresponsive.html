@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felx items</title>
+    <style>
+        * {
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .aligncen {
+            display: flex;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            
+        }
+
+        .one {
+            background-color: #f1f1f1;
+            padding: 10px;
+            flex: 25%;
+        }
+
+        .two {
+            background-color: #b9b3b3;
+            padding: 10px;
+            flex: 25%;
+        }
+
+        .three {
+            background-color: #575555;
+            flex-wrap: nowrap;
+            padding: 10px;
+            color: white;
+            flex: 25%;
+        }
+
+        .four {
+            background-color: #000000;
+            padding: 10px;
+            color: white;
+            flex: 25%;
+        }
+
+        @media (max-width: 800px) {
+
+            .four,
+            .two, .one, .three {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Flex items </h1>
+    <hr>
+
+    <div class="aligncen">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+    </div>
+
+
+</body>
+
+</html>
