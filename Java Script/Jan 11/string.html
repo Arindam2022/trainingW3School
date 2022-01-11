@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stirngs</title>
+</head>
+<body>
+    <h1>strings</h1>
+    <p>the length of the string 'qwertyuiiopasdfghjkzlxmcnvb' is <span id="len" ></span>.</p>
+    <p id="esc" ></p>
+    <p>comparing sting and string declared with new(object) with == and  === :</p>
+    <p id="com" ></p>
+    <p id="com1" ></p>
+
+    <script>
+    let a ="qwertyuiiopasdfghjkzlxmcnvb";
+    let b = a.length;
+    document.getElementById("len").innerHTML=b;
+     
+    let g = "this a string where \"special\" symbols are placed \'using\' escape Character\'s \f \b \r"
+    document.getElementById("esc").innerHTML=g;
+     
+    let x ="keshav";
+    let y = new String("keshav")
+
+    document.getElementById('com').innerHTML=(x==y);
+    document.getElementById('com1').innerHTML=(x===y);
+
+
+
+</script>
+</body>
+</html>

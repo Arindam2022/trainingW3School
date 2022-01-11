@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods</title>
+</head>
+<body>
+    <script>
+        let a = 56;
+        let b = a.toString();
+        console.log(a,b, typeof b);
+
+        let c = 852.526
+        let d = c.toExponential(2);
+        let e = c.toExponential(5);
+        console.log(d, e);
+
+        let x = 69.12345;
+        let y = x.toFixed(2);
+        let z = x.toFixed(10);
+        console.log(x, y, z);
+
+        let p = 99.8628;
+        let q = p.toPrecision(3);
+        let r = p.toPrecision(17);
+        let t = p.toPrecision(5);
+        console.log(p, q, r, t);
+
+        console.log((123*6).valueOf());
+        console.log( Number( new Date("2022-11-01")));
+        console.log(parseInt('69.58456'));
+        console.log(parseFloat('69.58456'));
+        console.log( Number.MAX_VALUE, Number.MIN_VALUE, Number.POSITIVE_INFINITY, Number.NEGATIVE_INFINITY, Number.NaN)
+
+
+    
+
+
+
+
+
+
+        </script>
+        
+
+
+</body>
+</html>

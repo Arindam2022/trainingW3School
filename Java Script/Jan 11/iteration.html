@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteration</title>
+</head>
+<body>
+    <p id="iter"></p>
+    <script>
+        const num =[85, 96, 41, 2, 78];
+        let txt = '';
+        num.forEach(iter);
+        document.getElementById("iter").innerHTML = txt;
+        function iter(value){
+            txt += value + "<br>";
+        }
+        
+        const n1 = [6, 5, 8, 9];
+        const n2 = n1.map(mul);
+         
+        function mul(value){
+            return value*2
+        }
+        console.log(n2)
+
+        const u1=[5, 6, 1, 9, 59];
+        const u2= u1.filter(g6);
+        function g6(value){
+            return value >= 6;
+        }
+        console.log(u2)
+
+        const t1 =[ 56, 79, 82, 165, 879];
+        const t2 = t1.reduce(tot);
+        function tot(total,value){
+            return total + value;
+        }
+        console.log(t2)
+        const v1=[55, 86, 51, 69, 559];
+        const v2= u1.every(more);
+        function more(value){
+            return value > 60;
+        }
+        console.log(v2)
+        const b1=[5, 26, 15, 9, 59];
+        const b2= u1.some(under);
+        function under(value){
+            return value < 16;
+        }
+        console.log(b2)
+
+
+
+    </script>
+    
+</body>
+</html>

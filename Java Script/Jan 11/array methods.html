@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <h2>Array to String</h2>
+    <p id="strng"></p>
+    <p id="strng1"></p>
+    <script>
+        const cars = ["audi", "merc", "porche"]
+        document.getElementById('strng').innerHTML = cars.toString();
+        const cars1 = ["audi", "merc", "porche"]
+        document.getElementById('strng1').innerHTML = cars1.join("-");
+    </script>
+    <h2>Array pop</h2>
+    <p id="abc"></p>
+    <p id="abcd"></p>
+    <script>
+        const colors = ["red", "yellow", "blue", "orange"];
+        document.getElementById("abc").innerHTML = colors;
+        colors.pop();
+        document.getElementById("abcd").innerHTML = colors;
+    </script>
+    <h2>Array push</h2>
+    <p id="push"></p>
+    <p id="push1"></p>
+    <script>
+        const colors1 = ["red", "yellow", "blue", "orange"];
+        document.getElementById("push").innerHTML = colors1;
+        colors1.push("black");
+        document.getElementById("push1").innerHTML = colors1;
+    </script>
+    <h2>Array shift</h2>
+    <p id="shft"></p>
+    <p id="shft1"></p>
+    <script>
+        const arr = ["one", "two", "three", "four"];
+        document.getElementById("shft").innerHTML = arr;
+        arr.shift();
+        document.getElementById("shft1").innerHTML = arr;
+    </script>
+    <h2>Array Unshift</h2>
+    <p id="ushft"></p>
+    <p id="ushft1"></p>
+    <script>
+        const arr1 = ["one", "two", "three", "four"];
+        document.getElementById("ushft").innerHTML = arr1;
+        arr1.unshift("zero");
+        document.getElementById("ushft1").innerHTML = arr1;
+    </script>
+    <h2>Merging</h2>
+    <p id="ar1"></p>
+    <p id="ar2"></p>
+    <p id="ar3"></p>
+    <script>
+        const ar1 = ["a", "b", "c", "d"]
+        const ar2 = ["x", "y", "z"]
+        document.getElementById("ar1").innerHTML = ar1;
+        document.getElementById("ar2").innerHTML = ar2;
+
+        const conarr = ar1.concat(ar2);
+        document.getElementById("ar3").innerHTML=conarr;
+
+
+
+    </script>
+
+</body>
+
+</html>

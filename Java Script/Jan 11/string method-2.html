@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String 2</title>
+</head>
+
+<body>
+    <h1>open console</h1>
+    <p id="rep">My name is Arindam</p>
+
+    <script>
+        let a = "asdfghjkl";
+        let text1 = "    happy birthday   "
+        let text2 = text1.trim();
+        console.log("length untrimed :" + text1.length + " length trimmed :" + text2.length)
+
+        let num = "5";
+        let pads = num.padStart(8, 6);
+        let pade = num.padEnd(5, 69);
+        console.log(num, pads, pade);
+
+        let char = a.charAt(5);
+        let char1 = a.charCodeAt(6);
+        let char2 = a[8];
+        console.log(a, char, char1, char2)
+
+        const arin = document.getElementById("rep").innerHTML.split(' ');
+        console.log(arin[3])
+
+
+
+    </script>
+
+</body>
+
+</html>

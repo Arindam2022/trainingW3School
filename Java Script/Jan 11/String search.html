@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search</title>
+</head>
+<body>
+    <h1>Search</h1>
+    <h2>Indexof()</h2>
+    <script>
+        let a ="My name is arindam kalra hello! arindam how are you";
+        let b = a.indexOf('arindam',);
+        let c = a.lastIndexOf('arindam');
+        let d = a.search('arindam');
+        console.log(a)
+        console.log("First arindam is at " +b + "th position");
+        console.log("last arindam is at " + c + "th postion");
+        console.log(d);
+        let e = a.match(/am/g);
+        console.log(e);
+
+        let f = a.includes('arindam');
+        console.log(f);
+        let g = a.startsWith('My');
+        let h = a.startsWith('name',5);
+        console.log(g,h);
+        let i = a.endsWith('you');
+        console.log(i)
+    </script>
+    
+</body>
+</html>

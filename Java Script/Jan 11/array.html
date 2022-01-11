@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>Array</h1>
+    <p id="arr"></p>
+    <script>
+        const names = ["ari", "kesh", "praj", "vish"]
+        let a = names.length;
+        console.log(names + " length :" + a);
+        console.log(names[2], names[a - 1]);
+
+        const arr = ["asd", "fgh", "hjk"]
+        let b = arr.length;
+
+        let c = "<ul>";
+        for (let i = 0; i < b; i++) {
+            c += "<li>" + arr[i] + "</li>";
+        }
+        c += '</ul>';
+         document.getElementById("arr").innerHTML = c;
+
+         names.push("bazigar");
+         console.log(names);
+         names[names.length]="white";
+         console.log(names)
+         console.log(names instanceof Array);
+         console.log( Array.isArray(names))
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

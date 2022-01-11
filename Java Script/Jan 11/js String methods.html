@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+    <p> The Length of the string "asdfghjkl" is <span id="length"> </span></p>
+    <p>convert the above into upper case <span id="up"></span></p>
+    <p>Slicing the string part string-"qwertyuiopasdfghjklzxcvbnm'</p>
+    <p >form 4 - 10 <span id='d'></span></p>
+    <p >from 2-13 from the end <span id='e'></span></p>
+    <p >omit first 10 <span id='f'></span></p>
+    <p id="rep">My name is Arindam</p>
+    
+    <button onclick="fullname()">FullName</button>
+    <p id="one">This is line one</p>
+    <p id="two">this is line two</p>
+    <p > this is concat of above two:  <span id="conc"></span></p>
+
+    <script>
+        let a ="asdfghjkl";
+        let b = a.length;
+        document.getElementById("length").innerHTML= b;
+
+        let c ="qwertyuiopasdfghjklzxcvbnm";
+        let d = c.slice(4,10);
+        let e = c.slice(-2,-13);
+        let f = c.slice(10);
+        
+        document.getElementById("d").innerHTML= d;
+        document.getElementById("e").innerHTML= e;
+        document.getElementById("f").innerHTML= f;
+
+        function fullname(){
+            let x= document.getElementById("rep").innerHTML;
+            document.getElementById("rep").innerHTML= 
+            x.replace(/arindam/i, "Arindam Kalra");
+        }
+
+        let y =a.toUpperCase();
+        document.getElementById("up").innerHTML= y;
+
+        let z = document.getElementById('one').innerHTML.concat(" ", document.getElementById("two").innerHTML);
+        document.getElementById("conc").innerHTML= z;
+        
+
+      
+
+    </script>
+    
+</body>
+</html>

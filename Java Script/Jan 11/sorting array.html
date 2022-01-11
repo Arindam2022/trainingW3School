@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Array</title>
+</head>
+
+<body>
+    <script>
+        const alpha = ["e", "d", "c", "a", "b"];
+        console.log(alpha);
+        const salpha = alpha.sort();
+        console.log(salpha)
+        console.log(salpha.reverse())
+
+        const num = [1, 5856, 25, 42, 65, 25]
+        console.log(num)
+        console.log(num.sort(function (a, b) { return b - a }));
+        console.log(num.sort(function (a, b) { return a - b }));
+
+        function maxx(arr) {
+            return Math.max.apply(null, arr);
+
+        }
+        console.log(maxx(num));
+        function minn(arr) {
+            return Math.min.apply(null, arr);
+
+        }
+        console.log(minn(num));
+
+        function maxi(arr){
+            let lenn = arr.length;
+            let max = -Infinity;
+            while(lenn--){ 
+                if (arr[lenn] > max){
+                max = arr[lenn];
+                }
+            }
+            return max;
+        }
+        console.log(maxi(num))
+
+
+
+    </script>
+
+</body>
+
+</html>

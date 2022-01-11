@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iteration2</title>
+</head>
+<body>
+    <script>
+        const things=['mouse', 'laptop', 'pillow', 'bottle','laptop']
+        let pos = things.indexOf('laptop')+ 1;
+        let pos2 = things.lastIndexOf('laptop')+ 1;
+        console.log(pos, pos2);
+
+        const n1 = [6, 5, 8, 9];
+        const n2 = n1.find(more8);
+        const n3 = n1.findIndex(more8);
+         
+        function more8(value){
+            return value > 8;
+        }
+        console.log(n2, n3);
+
+        const a="asdfghjkl";
+        let b = Array.from(a);
+        console.log(b);
+
+        let r = n1.includes(9);
+        console.log(r);
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
