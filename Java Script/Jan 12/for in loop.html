@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in loop in Objects</title>
+</head>
+<body>
+    <p id="forin"></p>
+    <script>
+        const details = {name:"Arindam" , Lname:"Kalra", age:18};
+        
+        let a = "";
+        for ( let i in details){
+            a += details[i] + " ";
+        }
+        document.getElementById("forin").innerHTML = a;
+
+
+
+    </script>
+    
+</body>
+</html>

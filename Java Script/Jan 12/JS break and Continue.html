@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Break and continue</title>
+</head>
+
+<body>
+    <p>loop till 10 break at 6</p>
+    <p id="break"></p>
+    <script>
+        let text = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 6) { break; }
+            text += "number" + i + "<br>"
+        }
+        document.getElementById("break").innerHTML = text;
+    </script>
+     <p>loop till 10 skipped at 6</p>
+     <p id="cont"></p>
+     <script>
+         let txt = "";
+         for (let i = 0; i < 10; i++) {
+             if (i === 6) { continue; }
+             txt += "number" + i + "<br>"
+         }
+         document.getElementById("cont").innerHTML = txt;
+     </script>
+
+</body>
+
+</html>

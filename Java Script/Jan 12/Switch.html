@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<body>
+    <p id="dd"></p>
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 55:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+                default:
+                    day = "Mujhe bi nhi pta kya ";
+        }
+        document.getElementById("dd").innerHTML = "Aaj " + day +"hai";
+                  </script>
+</body>
+
+</html>

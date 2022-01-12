@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iterables</title>
+</head>
+<body>
+    <p id="set"></p>
+    <p id="map"></p>
+    <script>
+        const arin = new Set(["a", "abc", "abcd"]);
+        let text ="";
+        for ( const y of arin){
+            text += y + "<br>"
+        }
+        document.getElementById("set").innerHTML=text;
+
+
+        const kesh = new Map([['Arindam',21],['Keshav',85],['vishal',21]]);
+        let txt = "";
+        for (const x of kesh){
+            txt+= x + '<br>';
+        }
+        document.getElementById("map").innerHTML=txt;
+
+
+
+
+    </script>
+    
+</body>
+</html>

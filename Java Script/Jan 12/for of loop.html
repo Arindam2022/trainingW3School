@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For of loop in Array and String</title>
+</head>
+<body>
+    <p id="forof"></p>
+    <p id="string"></p>
+    <script>
+        const fur = ["table", "chair", "beanbag", "shelf"]
+        let a= "";
+        for (let i of fur){
+            a += i + " ";
+        }
+        document.getElementById("forof").innerHTML=a;
+
+
+
+        const b ="Furniture"
+        let c = "";
+        for ( let i of b){
+            c += i +"<br>";
+        }
+        document.getElementById("string").innerHTML= c;
+    </script>
+    
+</body>
+</html>

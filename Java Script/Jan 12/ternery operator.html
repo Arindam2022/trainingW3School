@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional operator</title>
+</head>
+<body>
+    <p>Enter age </p>
+
+    <input id="age" />
+
+    <button onclick="Func()">Drink!</button>
+
+    <p id="daru"></p>
+
+    <script>
+        function Func() {
+            let age = document.getElementById("age").value;
+            let drink = (age < 18) ? "Duddu pio!" : "Drink UP Buddy!";
+            document.getElementById("daru").innerHTML = drink ;
+        }
+    </script>
+</body>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Set</title>
+</head>
+<body>
+    <p id="one"></p>
+    <script>
+        const k = new Date();
+        const fyear =k.setFullYear(2016);
+        const mon =k.setMonth(5);
+        const date =k.setDate(15);
+        const hours =k.setHours(5);
+        const min = k.setMinutes(69);
+        const sec =k.setSeconds(5);
+        const msec =k.setMilliseconds(45685);
+        const time =k.setTime(852963741);
+        
+        document.getElementById("one").innerHTML=fyear;
+        console.log(k);
+        console.log("fullyear:" + new Date(k.setFullYear(2016)));
+        console.log("month :"+ mon);
+        console.log("Date :"+ date);
+        console.log("hours :"+ hours);
+        console.log("Minutes :"+ min);
+        console.log("seconds :"+ sec);
+        console.log("miliSeconds :"+ msec);
+        console.log("time"+ time);
+        
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
