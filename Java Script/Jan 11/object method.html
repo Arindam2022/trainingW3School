@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>object methods </title>
+</head>
+<body>
+    <p id="op"></p>
+    <script>
+
+        const car = {
+            brand: 'audi',
+            model: 'r9',
+            seats: 10,
+            carfulldetails: function () {
+                return this.brand + ' ' + this.model + " " + this.seats;
+            },
+        }
+        document.getElementById("op").innerHTML = car.carfulldetails();
+        console.log(car.carfulldetails)
+        console.log(car.brand.toUpperCase())
+
+
+
+    </script>
+
+</body>
+
+</html>

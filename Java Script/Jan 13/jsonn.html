@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Json</title>
+</head>
+
+<body>
+    <script>
+
+        let emp = `[
+            {
+                "name": "arindam",
+                "age": 80,
+                "favcolor": "orange",
+                "favnum": 9
+            },
+            {
+                "name": "vishal",
+                "age": 55,
+                "favcolor": "mood pe depend krta hia",
+                "favnum": 8
+            }
+
+        ]`       
+        console.log(JSON.parse(emp));
+        console.log(JSON.parse(emp)[0].name);
+        console.log(JSON.parse(emp)[1].name);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This Keyword</title>
+</head>
+<body>
+    <button onclick="this.style.color='red'">change to red</button>
+    <script>
+        const arind = { num1:1, num2:2, num3:3,
+            sum:function(){
+                return this.num1 + this.num2 + this.num3;
+            }
+        }
+        const arind2={
+            num1:4, num2:3, num3:7,
+        }
+        console.log(arind.sum());
+        console.log(arind.sum.call(arind2));
+
+        let x = this;
+        console.log(x)
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

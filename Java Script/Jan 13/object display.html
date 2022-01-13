@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>object display </title>
+</head>
+
+<body>
+    <p id="op"></p>
+    <p id="s"></p>
+    <script>
+
+        const phone = {
+            brand: 'oneplus',
+            model: 'nord',
+            num: 2,
+            fulldetails: function () {
+                return this.brand + ' ' + this.model + " " + this.num;
+            },
+        }
+        phone.fulldetails = phone.fulldetails.toString()
+        const arr = Object.values(phone);
+        document.getElementById("op").innerHTML=arr;    
+        document.getElementById("s").innerHTML= JSON.stringify(phone);
+
+
+
+    </script>   
+
+</body>
+
+</html>

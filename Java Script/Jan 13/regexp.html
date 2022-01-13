@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regexp</title>
+</head>
+<body>
+    <script>
+        let txt ="this is search using Regular Expression - Regular expression";
+        let a = txt.search(/regular/i);
+        console.log(a)
+
+        let b = txt.replace(/expression/i,"Exp");
+        let c = txt.match(/regular/gi);
+        console.log(b);
+        console.log(c);
+
+        let d = txt.match(/[e]/gi);
+        console.log(d); 
+
+    
+
+    
+    </script>
+    
+</body>
+</html>

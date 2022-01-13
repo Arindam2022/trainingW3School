@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Errors</title>
+</head>
+
+<body>
+    <p id="error"></p>
+    <p id="names"></p>
+    <script>
+        try {
+            abcd("asdf ghjkl");
+        }
+        catch (err) {
+            document.getElementById("error").innerHTML = err.message;
+            document.getElementById("names").innerHTML = err.name;
+        }
+    </script>
+    <hr>
+    <p>enter a number</p>
+    <input id="one" type="text">
+    <button onclick="error()">Error ?</button>
+    <p id="two"></p>
+    <script>
+        function error() {
+            let x = document.getElementById("one").value;
+            try {
+                if (x == "") throw "enter somthing";
+                if (isNaN(x)) throw "enter is not a number";
+                x = Number(x);
+                if(x > 18) throw "enter below 18";
+            }
+            catch (err) {
+                document.getElementById("two").innerHTML = err;
+            }
+            finally{
+                document.getElementById("one").value = ""
+            }
+
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

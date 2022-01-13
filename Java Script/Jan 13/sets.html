@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SET</title>
+</head>
+
+<body>
+    <p id="st"></p>
+    <p id="sett"></p>
+    <script>
+        const set = new Set(["hello", "this", "is", "set"]);
+        const a = new Set();
+        const b = "this";
+        const c = " is value method";
+        a.add("arindam");
+        a.add("is");
+        a.add("my");
+        a.add("name");
+        a.add(b);
+        a.add(c);
+        console.log(set, a);
+        console.log(set.size, a.size)
+
+        let tex = "";
+        set.forEach(function (value) {
+            tex += value + " "
+        })
+        document.getElementById("st").innerHTML = tex;
+        let text = "";
+        for (const c of a.values()) {
+            text += c + " ";
+        }
+        document.getElementById("sett").innerHTML = text;
+        const Abc = set.entries();
+
+        // List all Entries
+        let text1 = "";
+        for (const entry of Abc) {
+            text1 += entry;
+        }
+        console.log(text1)
+
+    </script>
+
+</body>
+
+</html>

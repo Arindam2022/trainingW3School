@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Object Properties</title>
+</head>
+
+<body>
+    <p id="p"></p>
+    
+    <script>
+        let i= "";
+        const emp = {
+            name: "arindam",
+            age: 80,
+            favcolor: "orange",
+            favnum: 9,
+            phone:[
+                {brand:"oneplus", ram:85},
+                {brand:"apple", ram:66},
+                {brand:"vivo", ram:9001},
+            ]
+        };
+        emp.lname = " kalra";
+        console.log(emp.name);
+        console.log(emp.lname);
+
+        for ( let x in emp.phone){
+            i += "<h2>"+ emp.phone[x].brand + "</h2>";
+            for(let j in emp.phone){
+                i += emp.phone[j].ram + "<br>";
+            }
+        }
+        document.getElementById("p").innerHTML= i;
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

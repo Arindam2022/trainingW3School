@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+         let g = 99;
+        //g is in global scope and can be used every wehre 
+        console.log(g)
+ 
+        { let x = 2;}
+        console.log(x);
+        //x cant be used here
+
+        function xyz(){
+            var h = 23;
+            //this h is in function scope
+        }
+        console.log(h + "error");
+
+       
+
+
+    </script>
+    
+</body>
+</html>

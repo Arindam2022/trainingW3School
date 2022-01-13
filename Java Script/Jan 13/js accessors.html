@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessors</title>
+</head>
+<body>
+    <script>
+
+        const car = {
+            brand: 'audi',
+            model: 'r9',
+            seats: 0,
+            get carfulldetails() {
+                return this.brand.toUpperCase() + ' ' + this.model + " " + this.seats;
+            },
+            get mod(){
+                return this.model;
+            },
+            set seat(a){
+                this.seats = a;
+            }
+        }
+        car.seat = 99;
+        console.log(car.mod)
+        console.log(car.seats)
+        console.log(car.carfulldetails)
+     
+
+
+
+    </script>
+    
+</body>
+</html>

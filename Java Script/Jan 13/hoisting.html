@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoisting</title>
+</head>
+<body>
+    <script>
+        k = 89;
+        var k;
+        console.log(k)
+
+        //initializationis are not hoisted 
+        var p = 33;
+        console.log(p,l);
+        var l = 44;
+
+        //but this wont work in case of let and const
+        /*j = 55;
+        const j;
+        console.log(j);
+
+        m = 98;
+        let m;
+        console.log(m);*/
+
+
+    </script>
+    
+</body>
+</html>

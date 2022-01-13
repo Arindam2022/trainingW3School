@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COnstructor</title>
+</head>
+
+<body>
+    <script>
+        function Phone(brand, model, num) {
+            this.brand = brand;
+            this.model = model;
+            this.num = num;
+        }
+        Phone.prototype.ram = 8;
+
+        const one = new Phone("oneplus","nord", 2);
+            
+        console.log(one)
+        console.log(one.ram)
+
+
+
+
+    </script>
+
+</body>
+
+</html>

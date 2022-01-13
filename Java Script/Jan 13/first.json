@@ -1,0 +1,15 @@
+[
+    {
+        "name":"arindam",
+        "age":80 ,
+        "favcolor":"orange",
+        "favnum":9
+    },
+    {
+        "name":"vishal",
+        "age":55 ,
+        "favcolor":"mood pe depend krta hia",
+        "favnum":8
+    }
+
+]
