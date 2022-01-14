@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call</title>
+</head>
+<body>
+    <p id="ph"></p>
+    <p id="pho"></p>
+    <script>
+        const phone ={
+            details: function(num){
+                return this.brand+ " " + this.model+ "-"+ num;
+            }
+        }
+        const phone1 ={
+            brand:"onep",
+            model:"nord"
+        }
+        const phone2 ={
+            brand:"apple",
+            model:"iphone"
+        }
+          document.getElementById("ph").innerHTML= phone.details.call(phone1, 2);
+          document.getElementById("pho").innerHTML= phone.details.call(phone2, 11);
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

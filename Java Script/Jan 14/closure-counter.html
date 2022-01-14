@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="count()">Counter</button>
+    <p id="gg">0</p>
+
+    <script>
+        const add = (function(){
+            let counter= 0;
+            return function() { counter +=1 ; return counter;};
+        })();
+
+        function count(){
+            document.getElementById("gg").innerHTML=add();
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply</title>
+</head>
+<body>
+    <p id="ph"></p>
+    <p id="pho"></p>
+    <script>
+        const phone ={
+            details: function(num, review){
+                return this.brand+ " " + this.model+ "-"+ num +"-" +review;
+            }
+        }
+        const phone1 ={
+            brand:"onep",
+            model:"nord"
+        }
+        const phone2 ={
+            brand:"apple",
+            model:"iphone"
+        }
+          document.getElementById("ph").innerHTML= phone.details.apply(phone1,[ 2,'good']);
+          document.getElementById("pho").innerHTML= phone.details.apply(phone2, [11,'notgood']);
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

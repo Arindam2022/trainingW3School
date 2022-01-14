@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+
+<body>
+    <p id="self"></p>
+    <script>
+        console.log(square(9))
+        
+        const x = function (a, b) { return a * b };
+        var a = x(4, 3);
+        console.log(a);
+
+        (function(){ document.getElementById("self").innerHTML="hello this is self invoking fucntion"})();
+
+        function square(h){
+            return h*h;
+        }
+        let text = square.toString();
+        console.log(text);
+
+        const arr = (p,q,r) => p*q-r;
+        console.log(arr(8,9,5));
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Classes get and set</title>
+</head>
+
+<body>
+    <script>
+        class phone {
+            constructor(name, year) {
+                this.brand = name;
+                this.year = year;
+            }
+
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+
+            get brand(){
+                return this._brand
+            }
+            
+            set brand(t){
+                return this._brand = t;
+            }
+        }
+        let p1 = new phone("onep", 2020);
+        let p2 = new phone("", 4105);
+        p2.brand = "apple";
+       
+        console.log(p1.brand);
+        console.log(p2.brand);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fail and Pass</title>
+</head>
+
+<body>
+    <h1>Pass</h1>
+    <p id="pss"></p>
+    <h1>Fail</h1>
+    <p id = "fail"></p>
+    <script>
+        let stu = `[
+            {
+                "name": "Arindam",
+                "rollno": 1,
+                "subject": "thugonomcis",
+                "Address": "Hisar",
+                "Score": 9000
+            },
+            {
+                "name": "Keshav",
+                "rollno": 2,
+                "subject": "BE",
+                "Address": "Mars",
+                "Score": 27
+            },
+            {
+                "name": "Prajwal",
+                "rollno": 3,
+                "subject": "Math-1",
+                "Address": "camp",
+                "Score": 0
+            },
+            {
+                "name": "Vishal",
+                "rollno": 4,
+                "subject": "CSE",
+                "Address": "hisar",
+                "Score": 99
+            },
+            {
+                "name": "Kuch Bi Likhde",
+                "rollno": 5,
+                "subject": "CSE",
+                "Address": "hisar",
+                "Score": 52
+            }
+        ]`
+
+
+        let student = JSON.parse(stu);
+        console.log(student);
+        console.log((Object.values(student[4]))[4])
+
+        /*text = '';
+        for (let i= 0; i < student.length; i++) {
+            text += Object.values(student[i])[4] +",";
+        }
+        console.log(text);
+        /*student.forEach(obj => {
+            if(obj.Score > 33){
+                console.log(obj)
+
+
+            }
+        })*/
+
+        let i = "";
+        let f = "";
+        student.forEach(func);
+        function func(obj) {
+            if(obj.Score > 33){
+                i += "<h3>" + obj.name + "</h3>";
+                i += "Roll NO."+ obj.rollno + "<br>" + "Subject :"+obj.subject + "<br>" + "Adress :" +obj.Address + "<br>" +"Score :"+obj.Score + "<br>";
+            }else{
+                f += "<h3>" + obj.name + "</h3>";
+            }
+        }
+        // console.log(pass);
+        // for (let x in pass) {
+        //     i += "<h3>" ++ obj.name + "</h3>";
+        //     i += "Roll NO."+ obj.rollno + "<br>" + "Subject :"+obj.subject + "<br>" + "Adress :" +obj.Address + "<br>" +"Score :"++obj.Score + "<br>";
+
+        // }
+        document.getElementById("pss").innerHTML = i;
+        document.getElementById("fail").innerHTML = f;
+
+
+        // const fail = student.filter(func2);
+        // function func2(obj) {
+        //     return obj.Score < 33;
+        // }
+        // console.log(fail);
+        // for (let y in fail) {
+        //     f += "<h3>" + fail[y].name + "</h3>";
+        //     f += "Roll NO."+fail[y].rollno + "<br>" + "Subject :"+fail[y].subject + "<br>" + "Adress :" +fail[y].Address + "<br>" +"Score :"+ fail[y].Score + "<br>";
+
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

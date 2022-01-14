@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Funtcion Parameters</title>
+</head>
+
+<body>
+    <script>
+        function multiply(a, b = 9) {
+            return a * b;
+        }
+        console.log(multiply(5));
+
+        function maxi() {
+            let max = -Infinity;
+            for (let i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i]
+                }
+            }
+            return max;
+        }
+        console.log(maxi(555,444,789,579,846,5864,7411));
+
+        
+
+
+
+    </script>
+
+</body>
+
+</html>

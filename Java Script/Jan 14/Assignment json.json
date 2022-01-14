@@ -1,0 +1,39 @@
+[
+    {
+        "name":"arindam",
+        "rollno":1 ,
+        "subject":"thugonomcis",
+        "Address":"Hisar",
+        "Score":9000
+    },
+    {
+        "name":"keshav",
+        "rollno":2 ,
+        "subject":"BE",
+        "Address":"Mars",
+        "Score":27
+    },
+    {
+        "name":"Prajwal",
+        "rollno":3 ,
+        "subject":"Math-1",
+        "Address":"camp",
+        "Score":0
+    },
+    {
+        "name":"Vishal",
+        "rollno":4 ,
+        "subject":"CSE",
+        "Address":"hisar",
+        "Score":99
+    },
+    {
+        "name":"arindam",
+        "rollno":5 ,
+        "subject":"CSE",
+        "Address":"hisar",
+        "Score":52
+    },
+    
+   
+]

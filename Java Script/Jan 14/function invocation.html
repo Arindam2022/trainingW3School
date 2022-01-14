@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invocation</title>
+</head>
+
+<body>
+    <p id="this"></p>
+    <script>
+        function myFunction(a, b) {
+            return a * b;
+        }
+        console.log(window.myFunction(10, 2))
+
+        let x = thisFunc();
+        function thisFunc() {
+            return this;
+        }
+        console.log(x)
+        document.getElementById("this").innerHTML=x;
+
+        function detail(name,roll){
+            this.name=name;
+            this.rollno= roll;
+        }
+        const ari = new detail("arindam", 89);
+        console.log(ari.rollno)
+
+
+
+
+    </script>
+
+</body>
+
+</html>
