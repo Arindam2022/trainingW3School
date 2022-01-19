@@ -3,6 +3,7 @@ import "./Chart.css";
 
 const Chart = (props) => {
     const dataPointValues = props.dataPoints.map(dataPoint => dataPoint.value );
+    console.log("values",dataPointValues)
 const totalMax = Math.max(...dataPointValues);
 
   return (
@@ -12,7 +13,7 @@ const totalMax = Math.max(...dataPointValues);
           key={dataPoint.label}
           value={dataPoint.value}
           maxValue={totalMax}
-          label={dataPoint.lable}
+          label={dataPoint.label}
         />
       ))}
     </div>
