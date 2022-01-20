@@ -45,7 +45,7 @@ const AddUser = (props)=> {
         setAge('');
     }
     return (
-        <div>
+        <React.Fragment>
         {error && <ErrorModal onErrorHandler={errorHandler} title={error.title} msg={error.msg}/>}
         <Card className={styles.input}>
         <form onSubmit={addUserHandler}>
@@ -54,10 +54,9 @@ const AddUser = (props)=> {
             <label htmlFor="age">Age</label>
             <input id="age" type='number' value={enteredAge} onChange={ageChangeHandler}/>
             <Button type="submit">Add User</Button>
-
         </form>
         </Card>
-        </div>
+        </React.Fragment>
     )
 };
 export default AddUser;

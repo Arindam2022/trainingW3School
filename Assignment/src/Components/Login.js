@@ -10,6 +10,7 @@ const Login = (props) => {
 
     const credCheck = (event) =>{
         event.preventDefault();
+        console.log("hello00");
 
 
         props.Login(details);

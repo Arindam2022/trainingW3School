@@ -9,16 +9,14 @@ function App() {
   };
 
   const[cred,setCred] = useState({username:'',password:''}) 
+  const[isLogin,setIsLogin] = useState(false);
 
   const Login1 = (details) =>{
     console.log(details);
 
-    if(details.username == Arindam.username && details.password == Arindam.password){
+    if((details.username == Arindam.username) && (details.password == Arindam.password)){
       console.log("logged in");
-      setCred({
-        username: details.username,
-        password: details.password
-      });
+      setIsLogin(true);
     } else{
       console.log('no')
       alert("Invalid Details")
@@ -26,11 +24,11 @@ function App() {
 
   };
   const Logout1 = (lout) =>{
-    setCred(lout);
+    setIsLogin(lout);
   }
   return (
     <div>
-      {(cred.username != "") ? <ApplicationForm Logout={Logout1}/> : <Login Login={Login1} />}
+      {(isLogin === true) ? <ApplicationForm Logout={Logout1}/> : <Login Login={Login1} />}
       
     </div>
   );
